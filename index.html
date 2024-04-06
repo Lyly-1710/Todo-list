@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style></style>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <div class="container">
+        <form class="todo-form">
+          <input type="text" id="todo-input" placeholder="Add a new task." />
+          <button type="button" onclick="addTodo()" id="addButton">Add</button>
+          <button type="button" onclick="listItems()" id="allButton">All</button>
+          <div class="list">
+            <button type="button" onclick="listDone()" id="doneButton">Done</button>
+            <button type="button" onclick="unDoneList()" id="undoneBtn">UnDone</button>
+          </div>
+        </form>
+  
+        <ul id="todo-list">
+          <p id ="list"></p>
+        </ul>
+        <ul id="done-list"></ul>
+        <ul id="undone-list"></ul>
+        </div>
+    <script src="main.js"></script>
+    </body>
+</html>
